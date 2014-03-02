@@ -34,7 +34,7 @@ Hookup of the breakout board to 5V Arduino SPI connection.  All board components
  
 Hookup of the breakout board to 3.3V Arduino SPI connection.  On PCB populate only radio, flash memory, C1, C2 and C3.  Short the pads on the solder-jumpers.  
 
-	Arduino			RFM69W BOB  
+	Arduino			Half-Shield  
 	  NC	 		  5V  
 	  GND	<-->	  GND  
 	  D11	-->		  SDI  
