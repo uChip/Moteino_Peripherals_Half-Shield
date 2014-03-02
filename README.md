@@ -10,7 +10,7 @@ Here is the Moteino Peripherals Half-Shield plugged into an Arduino clone, the R
 
 <img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_top.jpg" alt="RFM69W Breakout Board" height="300" width="200">___<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_bottom.jpg" alt="RFM69W Breakout Board" height="300" width="200">  
 
-This repo includes Eagle CAD PCB design files for the board.  The board converts the RFM69W radio transceiver from SMT to 0.1" breadboard format and provides [optioinal] level translation for use with 5V controllers.  Note that this board is NOT compatible with the RFM12B or the RFM69CW radio modules.  Use the RFM69W or RFM69HW modules instead.  
+This repo includes Eagle CAD PCB design files for the board.  The board converts the RFM69W radio transceiver from SMT to 0.1" breadboard format and provides [optioinal] level translation for use with 5V controllers.  Note that you cannot solder the RFM12B or the RFM69CW radio modules to this board.  Use the RFM69W or RFM69HW modules instead.  
 
 The board also has provision on the bottom side for a conforming SOIC-8 package flash memory part such as the Winbond W25X40CLSNIG.  
 
