@@ -2,15 +2,15 @@
 
 <img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_top.png" alt="Moteino Peripherals Half-Shield top side" height="270" width="200">___<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_bottom.png" alt="Moteino Peripherals Half-Shield bottom side" height="270" width="200">  
 
-After making breakout boards for the RFM12B & RFM69 and getting a taste of what those radios can do, I decided I would like to experiment more with Felix Rusu's software.  Of particular interest is the software that Felix has created that enables an Arduino based device to be reprogrammed remotely and wirelessly**.  Now I could just buy a few of Felix's fine Moteinos, but I already have a bunch of Unos, Minis, Pro Micros and such.  So instead I decided to do a new version of the radio breakout board that adds the flash memory chip.  While I was at it, I also added the LED on D9 so that code would work too.  
+After making breakout boards for the RFM12B & [RFM69](https://github.com/uChip/RFM69W_BOB) and getting a taste of what those radios can do, I decided I would like to experiment more with [Felix Rusu's software](http://www.lowpowerlab.com).  Of particular interest is the software that Felix has created that enables an Arduino based device to be reprogrammed remotely and wirelessly**.  Now I could just buy a few of Felix's fine [Moteinos](http://lowpowerlab.com/moteino/), but I already have a bunch of [Unos](https://www.sparkfun.com/products/11021), [Minis](https://www.sparkfun.com/products/11113), [Pro Micros](https://www.sparkfun.com/products/12640) and such.  So instead I decided to do a new version of the radio breakout board that adds the flash memory chip.  While I was at it, I also added the LED on D9 so that code would work too.  
 
 I call the board a half-shield.  That is because it will plug directly into an UNO header (plus a couple of wires) but takes up only half the pins.  
 
-Here is the Moteino Peripherals Half-Shield plugged into an Arduino clone, the RedBoard from SparkFun.  
+Here is the Moteino Peripherals Half-Shield plugged into an Arduino clone, the [RedBoard](https://www.sparkfun.com/products/11575) from SparkFun.  
 
 <img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_top.jpg" alt="RFM69W Breakout Board" height="300" width="200">___<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_bottom.jpg" alt="RFM69W Breakout Board" height="300" width="200">  
 
-This repo includes Eagle CAD PCB design files for the board.  The board converts the RFM69W radio transceiver from SMT to 0.1" breadboard format and provides [optioinal] level translation for use with 5V controllers.  Note that you cannot solder the RFM12B or the RFM69CW radio modules to this board.  Use the RFM69W or RFM69HW modules instead.  
+This repo includes Eagle CAD PCB design files for the board.  The board converts the RFM69W radio transceiver from SMT to 0.1" breadboard format and provides [optional] level translation for use with 5V controllers.  Note that you cannot solder the RFM12B or the RFM69CW radio modules to this board.  Use the RFM69W or RFM69HW modules instead.  
 
 The board also has provision on the bottom side for a conforming SOIC-8 package flash memory part such as the Winbond W25X40CLSNIG.  
 
@@ -18,6 +18,7 @@ See the following links for Arduino drivers for the RFM69W and flash memory
   * https://github.com/LowPowerLab/RFM69  
   * https://github.com/LowPowerLab/SPIFlash  
 
+### 5V Hookup  
 Hookup of the breakout board to 5V Arduino SPI connection.  All board components populated.  Solder-jumpers left open.  
 
 	Arduino			Half-Shield  
@@ -32,6 +33,7 @@ Hookup of the breakout board to 5V Arduino SPI connection.  All board components
 	  D2	<--		  IRQ  
 	  		<--		  3V3  
  
+### 3.3V Hookup  
 Hookup of the breakout board to 3.3V Arduino SPI connection.  On PCB populate only radio, flash memory, C1, C2 and C3.  Short the pads on the solder-jumpers.  
 
 	Arduino			Half-Shield  
