@@ -272,6 +272,17 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="-2.2225" y1="0" x2="-1.5875" y2="0" width="0.127" layer="21"/>
 <wire x1="-1.905" y1="0.3175" x2="-1.905" y2="-0.3175" width="0.127" layer="21"/>
 </package>
+<package name="0805-LED">
+<description>Variant of package 0805 from SparkFun-Resistor.lbr.  Changed silk to show orientation. Changed pin names to A (annode) and C (cathode).</description>
+<wire x1="0.3" y1="0.6" x2="0.3" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.3" y1="0" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
+<smd name="A" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="C" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+<wire x1="-0.3" y1="0.6" x2="0.3" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.3" y1="-0.6" x2="0.3" y2="0" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RFM69W">
@@ -321,6 +332,32 @@ Standard 8.5x11 US Letter frame</description>
 <rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="LED">
+<description>Copied from SparkFun-LED.lbr to make LED in 0805 package.</description>
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
+<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="-2.159"/>
+<vertex x="-3.048" y="-1.27"/>
+<vertex x="-2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-3.302"/>
+<vertex x="-2.921" y="-2.413"/>
+<vertex x="-2.413" y="-2.921"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -381,6 +418,23 @@ Standard 8.5x11 US Letter frame</description>
 <connects>
 <connect gate="G$1" pin="+" pad="1"/>
 <connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED" prefix="LED">
+<description>Generic LED in 0805 package.  Both package and symbol copied from SparkFun libraries but they don't have a component LED in 0805.</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0805" package="0805-LED">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2319,7 +2373,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1k5"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M10" device="&quot;"/>
-<part name="D1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="LED"/>
+<part name="LED1" library="ChipsParts" deviceset="LED" device="-0805"/>
 </parts>
 <sheets>
 <sheet>
@@ -2372,7 +2426,7 @@ D2
 <instance part="JP1" gate="G$1" x="2.54" y="68.58" smashed="yes" rot="R270">
 <attribute name="NAME" x="11.43" y="68.58" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="D1" gate="G$1" x="27.94" y="25.4" rot="R90"/>
+<instance part="LED1" gate="G$1" x="27.94" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -2650,16 +2704,16 @@ D2
 <segment>
 <wire x1="0" y1="58.42" x2="0" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="0" y1="35.56" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="35.56" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="35.56" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="7"/>
-<pinref part="D1" gate="G$1" pin="2"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="D1" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="20.32" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="17.78" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
 </segment>
 </net>
 </nets>
