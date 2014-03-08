@@ -24,9 +24,9 @@ Hookup of the breakout board to 5V Arduino SPI connection.  All board components
 	Arduino			Half-Shield  
 	  5V	-->		  5V  
 	  GND	<-->	  GND  
-	  D11	-->		  SDI  
-	  D12	<--		  SDO  
 	  D13	-->		  SCK  
+	  D12	<--		  SDO  
+	  D11	-->		  SDI  
 	  D10	-->		  RSEL  
 	  D9	-->		  LED  
 	  D8	-->		  FSEL  
@@ -39,9 +39,9 @@ Hookup of the breakout board to 3.3V Arduino SPI connection.  On PCB populate on
 	Arduino			Half-Shield  
 	  NC	 		  5V  
 	  GND	<-->	  GND  
-	  D11	-->		  SDI  
-	  D12	<--		  SDO  
 	  D13	-->		  SCK  
+	  D12	<--		  SDO  
+	  D11	-->		  SDI  
 	  D10	-->		  RSEL  
 	  D9	-->		  LED  
 	  D8	-->		  FSEL  
@@ -63,6 +63,10 @@ See Bill of Materials file in repo for parts list.
 
 Design files are in "CadSoft EAGLE PCB Design Software" .brd and .sch formats.  
 A free version of the software can be downloaded from www.cadsoftusa.com.  
+
+<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_sch.png" alt="schematic" height="531" width="396">  
+
+<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_brd.png" alt="PCB" height="244" width="326">  
 
 ## Distribution License  
 
