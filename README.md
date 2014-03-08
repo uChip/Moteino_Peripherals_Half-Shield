@@ -64,9 +64,9 @@ See Bill of Materials file in repo for parts list.
 Design files are in "CadSoft EAGLE PCB Design Software" .brd and .sch formats.  
 A free version of the software can be downloaded from www.cadsoftusa.com.  
 
-<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_sch.png" alt="schematic" height="531" width="396">  
+<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_sch.png" alt="schematic" height="396" width="531">  
 
-<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_brd.png" alt="PCB" height="244" width="326">  
+<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_brd.png" alt="PCB" height="326" width="244">  
 
 ## Distribution License  
 
