@@ -8,7 +8,7 @@ I call the board a half-shield.  That is because it will plug directly into an U
 
 Here is the Moteino Peripherals Half-Shield plugged into an Arduino clone, the [RedBoard](https://www.sparkfun.com/products/11575) from SparkFun.  
 
-<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_top.jpg" alt="RFM69W Breakout Board" height="300" width="200">___<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_bottom.jpg" alt="RFM69W Breakout Board" height="300" width="200">  
+<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_top.jpg" alt="MPHS top side" height="300" width="200">___<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_bottom.jpg" alt="MPHS bottom side" height="300" width="200">  
 
 This repo includes Eagle CAD PCB design files for the board.  The board converts the RFM69W radio transceiver from SMT to 0.1" breadboard format and provides [optional] level translation for use with 5V controllers.  Note that you cannot solder the RFM12B or the RFM69CW radio modules to this board.  Use the RFM69W or RFM69HW modules instead.  
 
@@ -64,9 +64,11 @@ See Bill of Materials file in repo for parts list.
 Design files are in "CadSoft EAGLE PCB Design Software" .brd and .sch formats.  
 A free version of the software can be downloaded from www.cadsoftusa.com.  
 
-<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_sch.png" alt="schematic" height="396" width="531">  
+<img src="https://raw.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_sch.PNG" alt="schematic" height="396" width="531">  
+schematic  
 
-<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_brd.png" alt="PCB" height="326" width="244">  
+<img src="https://raw.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_brd.PNG" alt="PCB" height="326" width="244">  
+PCB   
 
 ## Distribution License  
 
