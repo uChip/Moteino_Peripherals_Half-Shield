@@ -1,6 +1,6 @@
 # Moteino Peripherals Half-Shield  
 
-<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_top.png" alt="Moteino Peripherals Half-Shield top side" height="270" width="200">___<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_bottom.png" alt="Moteino Peripherals Half-Shield bottom side" height="270" width="200">  
+<img src="https://raw.githubusercontent.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_top.png" alt="Moteino Peripherals Half-Shield top side" height="270" width="200">___<img src="https://raw.githubusercontent.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_bottom.png" alt="Moteino Peripherals Half-Shield bottom side" height="270" width="200">  
 
 After making breakout boards for the RFM12B & [RFM69](https://github.com/uChip/RFM69W_BOB) and getting a taste of what those radios can do, I decided I would like to experiment more with [Felix Rusu's software](http://www.lowpowerlab.com).  Of particular interest is the software that Felix has created that enables an Arduino based device to be reprogrammed remotely and wirelessly**.  Now I could just buy a few of Felix's fine [Moteinos](http://lowpowerlab.com/moteino/), but I already have a bunch of [Unos](https://www.sparkfun.com/products/11021), [Minis](https://www.sparkfun.com/products/11113), [Pro Micros](https://www.sparkfun.com/products/12640) and such.  So instead I decided to do a new version of the radio breakout board that adds the flash memory chip.  While I was at it, I also added the LED on D9 so that code would work too.  
 
@@ -8,7 +8,7 @@ I call the board a half-shield.  That is because it will plug directly into an U
 
 Here is the Moteino Peripherals Half-Shield plugged into an Arduino clone, the [RedBoard](https://www.sparkfun.com/products/11575) from SparkFun.  
 
-<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_top.jpg" alt="MPHS top side" height="300" width="200">___<img src="https://raw2.github.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_bottom.jpg" alt="MPHS bottom side" height="300" width="200">  
+<img src="https://raw.githubusercontent.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_top.jpg" alt="MPHS top side" height="300" width="200">___<img src="https://raw.githubusercontent.com/uChip/Moteino_Peripherals_Half-Shield/master/MPHS_bottom.jpg" alt="MPHS bottom side" height="300" width="200">  
 
 This repo includes Eagle CAD PCB design files for the board.  The board converts the RFM69W radio transceiver from SMT to 0.1" breadboard format and provides [optional] level translation for use with 5V controllers.  Note that you cannot solder the RFM12B or the RFM69CW radio modules to this board.  Use the RFM69W or RFM69HW modules instead.  
 
